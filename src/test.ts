@@ -1,6 +1,8 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import express from 'express'
 import pathName from 'path'
+const index = require('./routes/index')
+const report = require('./routes/report')
 
 const app = express()
 const PORT: number = 3000;
@@ -11,8 +13,11 @@ app.set('views', 'src/views')
 
 app.use('/public', publicPath)
 
-app.use('/', (res: any, req: any) => {
-  req.render('index.ejs')
+app.get('/', index)
+app.get('/report', report)
+
+app.use('/report', (res: any, req: any) => {
+  req.send('report.ejs')
 })
 
 app.listen(PORT, () => {

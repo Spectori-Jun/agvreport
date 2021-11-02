@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
   <meta charset="UTF-8">
@@ -12,13 +12,16 @@
 </head>
 
 <body>
+  <img src="/public/img/sisLogo.png" />
+
   <h2 id="clock" class="">00:00:00</h2>
 
-  <form id="loginForm">
-    <input id="nameInput" required maxlength="5" type="text" placeholder="what's your name?" />
-    <button id="crButton">확인</button>
-  </form>
-
+  <div id="login-form">
+    <form id="loginForm">
+      <input id="nameInput" required maxlength="5" type="text" placeholder="what's your name?" />
+      <button id="crButton">확인</button>
+    </form>
+  </div>
   <h1 id="greeting" class="hidden"></h1>
   <button id="rmButton">이름 바꾸기</button>
 </body>
