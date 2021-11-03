@@ -1,12 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/public/css/report.css">
+  <script defer src="/public/js/report/report.js"></script>
+  <script defer src="/public/js/clock/clock.js"></script>
   <title>Document</title>
 </head>
+
 <body>
-  <h1>report page</h1>
+  <h1>REPORT PAGE</h1>
+  <h2 id="clock" class="">00:00:00</h2>
+  <h3 id="savedUsername" class=""></h3>
+
+  <form id="reportForm">
+    <div id="reportForm" class="">
+      <h2>사업장 이름</h2>
+      <input type="text" id="companyName" class="reportFormCss" placeholder="Please enter company name"><br />
+
+      <h2>문제 기계 고유번호</h2>
+      <input type="text" id="MachineNumber" class="reportFormCss" placeholder="Please enter Machine number">
+
+      <h2>문제 발생 시기</h2>
+      <input type="text" id="whenOccur" class="reportFormCss" placeholder="Please enter when the machine problem">
+
+      <h2>기타</h2>
+      <input type="text" id="etc" class="reportFormCss" placeholder="Please enter any word"><br />
+
+      <div class="dash-line">
+        <h2>분야</h2>
+        <input type="checkbox" id="checkBox" class="">
+        <label for="electronic">전기/전장</label>
+
+        <input type="checkbox" id="checkBox" class="">
+        <label for="electronic">기계</label>
+
+        <input type="checkbox" id="checkBox" class="">
+        <label for="electronic">설계</label>
+
+        <input type="checkbox" id="checkBox" class="">
+        <label for="electronic">S/W</label><br /><br />
+      </div><br/>
+      <button id="submitButton">전송</button>
+    </div>
+  </form>
 </body>
+
 </html>

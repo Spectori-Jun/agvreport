@@ -1,0 +1,47 @@
+body {
+  background-color: #88E0EF;
+  color: #161E54;
+}
+
+#reportForm {
+  color: #161E54;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.reportFormCss {
+  color: #161E54;
+  width: 550px;
+  height: 50px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 25px;
+  background-color: white;
+}
+
+.reportFormCss::-webkit-input-placeholder{ 
+  text-align: center;
+  font-size: 25px;
+}
+
+#checkBox {
+  align-items: center;
+  width: 30px;
+  height: 30px;
+}
+
+#submitButton {
+  margin-top: 50px;
+}
+
+.dash-line{
+  display: inline-block;
+  margin-top: 40px;
+  border: 1px dashed;
+  width: 550px;
+}
+
