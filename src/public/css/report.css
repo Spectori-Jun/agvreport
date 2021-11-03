@@ -35,13 +35,18 @@ body {
 }
 
 #submitButton {
+  width: 250px;
+  height: 60px;
   margin-top: 50px;
+  border-radius: 8px;
+  background-color: #FF9B6A;
 }
 
 .dash-line{
   display: inline-block;
   margin-top: 40px;
   border: 1px dashed;
+  border-radius: 8px;
   width: 550px;
 }
 
